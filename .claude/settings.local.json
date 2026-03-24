@@ -3,7 +3,8 @@
     "allow": [
       "Bash(node:*)",
       "Bash(ls C:/Users/walla/Desktop/Claude-Commercial-machinery-guide/cmg_final/*.html)",
-      "Bash(xargs -I{} basename {})"
+      "Bash(xargs -I{} basename {})",
+      "Bash(ls \"/c/Users/walla/Desktop/Claude-Commercial-machinery-guide/cmg_final/\"*.html)"
     ]
   }
 }
