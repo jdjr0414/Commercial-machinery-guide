@@ -100,6 +100,56 @@
   <a href="/">Home</a> &rsaquo; <a href="/forklift-financing.html">Forklift Financing</a> &rsaquo; Toyota vs Crown vs Hyster
 </nav>
 
+
+<section style="padding:40px 0;background:linear-gradient(135deg,#0a1628 0%,#1e3058 100%);">
+  <div class="container" style="max-width:900px;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+      <div>
+        <p style="font-size:0.78rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#e8610a;margin-bottom:12px;">Equipment Financing</p>
+        <h2 style="font-size:1.8rem;font-weight:800;color:#ffffff;margin-bottom:16px;line-height:1.2;">0% Down Available on All Brands</h2>
+        <p style="color:rgba(255,255,255,0.82);font-size:1rem;line-height:1.7;margin-bottom:20px;">Axiant Partners finances all major equipment brands — Caterpillar, Komatsu, John Deere, XCMG, SANY, and 200+ more. 0% down available for qualified borrowers regardless of brand. Terms 36–84 months.</p>
+        <ul style="list-style:none;padding:0;margin:0 0 24px 0;display:flex;flex-direction:column;gap:8px;">
+          <li style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.85);font-size:0.9rem;"><span style="color:#e8610a;font-weight:700;">&#10003;</span> 0% down for qualified borrowers</li>
+          <li style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.85);font-size:0.9rem;"><span style="color:#e8610a;font-weight:700;">&#10003;</span> All brands including XCMG and SANY</li>
+          <li style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.85);font-size:0.9rem;"><span style="color:#e8610a;font-weight:700;">&#10003;</span> New and used equipment</li>
+          <li style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.85);font-size:0.9rem;"><span style="color:#e8610a;font-weight:700;">&#10003;</span> Startups and established businesses</li>
+          <li style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.85);font-size:0.9rem;"><span style="color:#e8610a;font-weight:700;">&#10003;</span> Decision in 24&#8211;48 hours</li>
+        </ul>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;">
+          <a href="https://axiantpartners.com/match" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Get Financing Options &#8594;</a>
+          <a href="tel:+19199072611" style="display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,0.8);font-weight:600;font-size:0.95rem;text-decoration:none;">&#128222; (919) 907-2611</a>
+        </div>
+      </div>
+      <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:32px;">
+        <p style="color:#ffffff;font-weight:700;font-size:1rem;margin-bottom:20px;">Get a Free Quote in 60 Seconds</p>
+        <form id="axiantMidForm" style="display:flex;flex-direction:column;gap:12px;">
+          <input type="hidden" name="_source" value="commercialmachineryguide-midpage">
+          <input type="text" name="firstName" placeholder="Your Name *" required style="padding:12px 16px;border:1.5px solid rgba(255,255,255,0.2);border-radius:8px;background:rgba(255,255,255,0.08);color:#ffffff;font-size:0.95rem;font-family:inherit;">
+          <input type="tel" name="phone" placeholder="Phone Number *" required style="padding:12px 16px;border:1.5px solid rgba(255,255,255,0.2);border-radius:8px;background:rgba(255,255,255,0.08);color:#ffffff;font-size:0.95rem;font-family:inherit;">
+          <input type="email" name="email" placeholder="Email Address *" required style="padding:12px 16px;border:1.5px solid rgba(255,255,255,0.2);border-radius:8px;background:rgba(255,255,255,0.08);color:#ffffff;font-size:0.95rem;font-family:inherit;">
+          <input type="text" name="equipmentNeeded" placeholder="Equipment needed (e.g. Cat 320 excavator)" style="padding:12px 16px;border:1.5px solid rgba(255,255,255,0.2);border-radius:8px;background:rgba(255,255,255,0.08);color:#ffffff;font-size:0.95rem;font-family:inherit;">
+          <button type="submit" id="axiantMidBtn" style="background:#e8610a;color:#ffffff;border:none;border-radius:8px;padding:14px;font-size:1rem;font-weight:700;cursor:pointer;font-family:inherit;">Get My Financing Options &#8594;</button>
+          <div id="axiantMidSuccess" style="display:none;background:rgba(46,125,50,0.2);border:1px solid #4caf50;border-radius:8px;padding:14px;text-align:center;color:#a5d6a7;font-weight:600;">&#10003; Received! We'll call you within 1 business day.</div>
+          <div id="axiantMidError" style="display:none;background:rgba(198,40,40,0.2);border:1px solid #f44336;border-radius:8px;padding:14px;text-align:center;color:#ef9a9a;">Something went wrong. Call (919) 907-2611 directly.</div>
+        </form>
+        <script>
+        document.getElementById('axiantMidForm').addEventListener('submit',async function(e){
+          e.preventDefault();
+          const btn=document.getElementById('axiantMidBtn');
+          btn.textContent='Sending...';btn.disabled=true;
+          const data=Object.fromEntries(new FormData(this).entries());
+          try{
+            const r=await fetch('https://formspree.io/f/xbdzbqjw',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)});
+            if(r.ok){document.getElementById('axiantMidSuccess').style.display='block';this.reset();btn.textContent='Submitted';}
+            else throw new Error();
+          }catch(e){document.getElementById('axiantMidError').style.display='block';btn.textContent='Get My Financing Options';btn.disabled=false;}
+        });
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="hero">
   <h1>Toyota vs Crown vs Hyster Forklifts — Complete Comparison</h1>
   <p class="hero-sub">Toyota 8FGCU25 at $22K–$30K &bull; Crown FC 5200 at $30K–$40K &bull; Hyster H50FT at $22K–$31K &bull; Resale, OEM financing, and total cost compared</p>
@@ -289,18 +339,58 @@
   </div>
 </footer>
 
-<div class="sticky-cta" id="stickyCta">
-  <p><strong>Need equipment financing?</strong> Call us or explore options online — no obligation.</p>
-  <div style="display:flex;gap:12px;flex-shrink:0;">
-    <a href="tel:+19199072611" class="btn btn-secondary btn-sm">📞 (919) 907-2611</a>
-    <a href="https://axiantpartners.com/match" rel="sponsored noopener noreferrer" target="_blank" class="btn btn-primary btn-sm">Get Financing →</a>
+<div id="stickyCta" style="position:fixed;bottom:0;left:0;right:0;background:#0a1628;border-top:3px solid #e8610a;padding:12px 24px;display:none;align-items:center;justify-content:space-between;z-index:999;gap:16px;box-shadow:0 -4px 24px rgba(0,0,0,0.4);">
+  <div style="display:flex;align-items:center;gap:16px;">
+    <div>
+      <p style="color:#ffffff;font-weight:700;font-size:0.95rem;margin:0;">0% Down Equipment Financing &#8212; All Brands</p>
+      <p style="color:rgba(255,255,255,0.65);font-size:0.78rem;margin:0;">Axiant Partners &#183; (919) 907-2611 &#183; Decision in 24&#8211;48 hrs</p>
+    </div>
+  </div>
+  <div style="display:flex;gap:12px;align-items:center;flex-shrink:0;">
+    <a href="tel:+19199072611" style="color:rgba(255,255,255,0.8);font-weight:600;font-size:0.88rem;text-decoration:none;white-space:nowrap;">&#128222; Call Now</a>
+    <a href="https://axiantpartners.com/match" target="_blank" rel="noopener noreferrer" style="background:#e8610a;color:#ffffff;padding:10px 22px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;white-space:nowrap;">Get Financing &#8594;</a>
+    <button onclick="document.getElementById('stickyCta').style.display='none'" style="background:none;border:none;color:rgba(255,255,255,0.4);font-size:1.2rem;cursor:pointer;padding:4px;">&#10005;</button>
   </div>
 </div>
 <script>
-window.addEventListener('scroll', function() {
-  var cta = document.getElementById('stickyCta');
-  if (window.scrollY > 400) cta.classList.add('visible');
-  else cta.classList.remove('visible');
+let stickyShown=false;
+window.addEventListener('scroll',function(){
+  const el=document.getElementById('stickyCta');
+  if(window.scrollY>300&&!stickyShown){el.style.display='flex';stickyShown=true;}
+});
+</script>
+<div id="exitPopup" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.75);z-index:9999;align-items:center;justify-content:center;">
+  <div style="background:#ffffff;border-radius:16px;padding:40px;max-width:480px;width:90%;position:relative;">
+    <button onclick="document.getElementById('exitPopup').style.display='none'" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:1.4rem;cursor:pointer;color:#9aa3b0;">&#10005;</button>
+    <p style="font-size:0.78rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#e8610a;margin-bottom:8px;">Before You Go</p>
+    <h3 style="font-size:1.5rem;font-weight:800;color:#0a1628;margin-bottom:12px;line-height:1.3;">Get Your Equipment Financing Options &#8212; Free, No Obligation</h3>
+    <p style="color:#4a5568;font-size:0.9rem;line-height:1.6;margin-bottom:20px;">0% down available for qualified borrowers. All brands. Decision in 24&#8211;48 hours. Takes 60 seconds.</p>
+    <form id="exitForm" style="display:flex;flex-direction:column;gap:10px;">
+      <input type="hidden" name="_source" value="commercialmachineryguide-exit">
+      <input type="text" name="firstName" placeholder="Your Name *" required style="padding:12px 16px;border:1.5px solid #dde1e8;border-radius:8px;font-size:0.95rem;font-family:inherit;">
+      <input type="tel" name="phone" placeholder="Phone Number *" required style="padding:12px 16px;border:1.5px solid #dde1e8;border-radius:8px;font-size:0.95rem;font-family:inherit;">
+      <input type="text" name="equipment" placeholder="What equipment do you need?" style="padding:12px 16px;border:1.5px solid #dde1e8;border-radius:8px;font-size:0.95rem;font-family:inherit;">
+      <button type="submit" id="exitBtn" style="background:#e8610a;color:#ffffff;border:none;border-radius:8px;padding:14px;font-size:1rem;font-weight:700;cursor:pointer;font-family:inherit;">Get My Free Quote &#8594;</button>
+      <div id="exitSuccess" style="display:none;background:#e8f5e9;border:1px solid #4caf50;border-radius:8px;padding:14px;text-align:center;color:#2e7d32;font-weight:600;">&#10003; Got it! We'll be in touch within 1 business day.</div>
+    </form>
+    <p style="font-size:0.75rem;color:#9aa3b0;text-align:center;margin-top:12px;">No spam. No obligation. Axiant Partners &#183; (919) 907-2611</p>
+  </div>
+</div>
+<script>
+let exitShown=false;
+document.addEventListener('mouseleave',function(e){
+  if(e.clientY<50&&!exitShown){exitShown=true;document.getElementById('exitPopup').style.display='flex';}
+});
+document.getElementById('exitForm').addEventListener('submit',async function(e){
+  e.preventDefault();
+  const btn=document.getElementById('exitBtn');
+  btn.textContent='Sending...';btn.disabled=true;
+  const data=Object.fromEntries(new FormData(this).entries());
+  try{
+    const r=await fetch('https://formspree.io/f/xbdzbqjw',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)});
+    if(r.ok){document.getElementById('exitSuccess').style.display='block';this.reset();btn.textContent='Submitted';setTimeout(()=>{document.getElementById('exitPopup').style.display='none';},3000);}
+    else throw new Error();
+  }catch(err){btn.textContent='Get My Free Quote';btn.disabled=false;}
 });
 </script>
 </body>
