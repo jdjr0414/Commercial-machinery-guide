@@ -7,7 +7,7 @@ Build the following new page. Match the exact structure from index.html.
 ---
 
 FILE: data-center-infrastructure-financing.html
-Canonical: https://commercialmachineryguide.com/data-center-infrastructure-financing.html
+Canonical: https://equipmentfinancehub.com/data-center-infrastructure-financing.html
 Title: Data Center Infrastructure Financing | Servers, Cooling, UPS, Colocation Buildouts
 Meta: Financing for data center infrastructure — servers, storage, networking, UPS systems, precision cooling, raised floor systems, generators, and complete colocation buildouts. Dell, HPE, Cisco, Vertiv, APC, Schneider Electric, and 40+ brands covered.
 

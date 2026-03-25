@@ -1,5 +1,5 @@
-# Commercial Machinery Guide — Complete Site Package
-# commercialmachineryguide.com
+# Equipment Finance Hub — Complete Site Package
+# equipmentfinancehub.com
 # SEO + AEO + GEO Optimized
 
 ## What's in this folder

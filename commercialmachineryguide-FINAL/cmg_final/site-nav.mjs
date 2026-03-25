@@ -6,7 +6,7 @@ export const SITE_HEADER = `<header class="site-header">
     <a href="/" class="site-logo">
       <span class="logo-icon">⚙️</span>
       <span>
-        Commercial Machinery Guide
+        Equipment Finance Hub
         <span class="logo-sub">Equipment Financing Resource</span>
       </span>
     </a>

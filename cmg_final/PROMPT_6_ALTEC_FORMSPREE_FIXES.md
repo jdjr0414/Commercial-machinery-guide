@@ -10,7 +10,7 @@ Delete the existing thin altec-industries-financing.html and build a complete re
 Minimum 2,500 words. Every model line broken out with specs and prices.
 
 FILE: altec-industries-financing.html
-Canonical: https://commercialmachineryguide.com/altec-industries-financing.html
+Canonical: https://equipmentfinancehub.com/altec-industries-financing.html
 Title: Altec Industries Equipment Financing | Every Model — AT, LRV, AA, DM, UN Series
 Meta: Complete Altec Industries financing guide. Every AT, LRV, AA, DM, UN, and DA series model with specs and prices. Altec Financial Services, new vs used, and how Altec compares to Elliott and Custom Truck One Source.
 
@@ -382,7 +382,7 @@ Then add the same form as a standalone page.
 
 The Formspree endpoint is: https://formspree.io/f/xbdzbqjw
 The form should POST to Formspree via AJAX (fetch), show success/error states, and NOT reload the page.
-Include hidden field: _source with value "commercialmachineryguide"
+Include hidden field: _source with value "equipmentfinancehub"
 
 ### ADD TO index.html — Insert this section before the final CTA band:
 
@@ -395,7 +395,7 @@ Include hidden field: _source with value "commercialmachineryguide"
       <p>Get matched with financing options for your specific equipment. No obligation — we respond within 1 business day.</p>
     </div>
     <form id="cmgForm" class="cmg-form">
-      <input type="hidden" name="_source" value="commercialmachineryguide">
+      <input type="hidden" name="_source" value="equipmentfinancehub">
       <div class="form-row">
         <div class="form-group">
           <label for="firstName">First Name *</label>
@@ -535,9 +535,9 @@ document.getElementById('cmgForm').addEventListener('submit', async function(e) 
 ### BUILD NEW PAGE: contact.html
 
 FILE: contact.html
-Canonical: https://commercialmachineryguide.com/contact.html
-Title: Contact | Equipment Financing Questions — Commercial Machinery Guide
-Meta: Contact Commercial Machinery Guide for equipment financing questions. Call (919) 907-2611 or submit your equipment details online. We match you with financing options for any commercial equipment.
+Canonical: https://equipmentfinancehub.com/contact.html
+Title: Contact | Equipment Financing Questions — Equipment Finance Hub
+Meta: Contact Equipment Finance Hub for equipment financing questions. Call (919) 907-2611 or submit your equipment details online. We match you with financing options for any commercial equipment.
 H1: Get Equipment Financing Options
 
 Include the SAME form as above (copy it exactly from index.html).

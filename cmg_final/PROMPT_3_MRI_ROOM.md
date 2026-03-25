@@ -233,7 +233,7 @@ FINANCING APPROACH:
 ## PART B: BUILD NEW PAGE
 
 FILE: mri-imaging-center-startup-guide.html
-Canonical: https://commercialmachineryguide.com/mri-imaging-center-startup-guide.html
+Canonical: https://equipmentfinancehub.com/mri-imaging-center-startup-guide.html
 Title: How to Start an MRI & Medical Imaging Center | Complete Startup Guide
 Meta: Complete guide to starting an independent medical imaging center. MRI room shielding costs, CON laws by state, licensing requirements, equipment costs, staffing, revenue model, and financing options. Total startup cost: $1.4M-$3.4M.
 

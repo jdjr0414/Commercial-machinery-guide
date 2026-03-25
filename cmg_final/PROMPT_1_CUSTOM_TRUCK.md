@@ -11,7 +11,7 @@ licensing section (.req-grid), FAQ (.faq-list), CTA band, sticky CTA bar, and fo
 ---
 
 FILE: custom-truck-specialty-aerial-financing.html
-Canonical: https://commercialmachineryguide.com/custom-truck-specialty-aerial-financing.html
+Canonical: https://equipmentfinancehub.com/custom-truck-specialty-aerial-financing.html
 Title: Custom Truck & Specialty Aerial Equipment Financing | Altec, Custom Truck One Source, Elliott & More
 Meta: Financing for custom-built trucks, digger derricks, aerial work platforms, cable placers, and specialty utility equipment. Custom Truck One Source, Altec Industries, Elliott Equipment, Terex Utilities, and 20+ manufacturers.
 

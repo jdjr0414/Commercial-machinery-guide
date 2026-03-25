@@ -27,7 +27,7 @@ const AXIANT_SECTION = `
       <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:32px;">
         <p style="color:#ffffff;font-weight:700;font-size:1rem;margin-bottom:20px;">Get a Free Quote in 60 Seconds</p>
         <form id="axiantMidForm" style="display:flex;flex-direction:column;gap:12px;">
-          <input type="hidden" name="_source" value="commercialmachineryguide-midpage">
+          <input type="hidden" name="_source" value="equipmentfinancehub-midpage">
           <input type="text" name="firstName" placeholder="Your Name *" required style="padding:12px 16px;border:1.5px solid rgba(255,255,255,0.2);border-radius:8px;background:rgba(255,255,255,0.08);color:#ffffff;font-size:0.95rem;font-family:inherit;">
           <input type="tel" name="phone" placeholder="Phone Number *" required style="padding:12px 16px;border:1.5px solid rgba(255,255,255,0.2);border-radius:8px;background:rgba(255,255,255,0.08);color:#ffffff;font-size:0.95rem;font-family:inherit;">
           <input type="email" name="email" placeholder="Email Address *" required style="padding:12px 16px;border:1.5px solid rgba(255,255,255,0.2);border-radius:8px;background:rgba(255,255,255,0.08);color:#ffffff;font-size:0.95rem;font-family:inherit;">
@@ -82,7 +82,7 @@ const EXIT_POPUP = `<div id="exitPopup" style="display:none;position:fixed;top:0
     <h3 style="font-size:1.5rem;font-weight:800;color:#0a1628;margin-bottom:12px;line-height:1.3;">Get Your Equipment Financing Options &#8212; Free, No Obligation</h3>
     <p style="color:#4a5568;font-size:0.9rem;line-height:1.6;margin-bottom:20px;">0% down available for qualified borrowers. All brands. Decision in 24&#8211;48 hours. Takes 60 seconds.</p>
     <form id="exitForm" style="display:flex;flex-direction:column;gap:10px;">
-      <input type="hidden" name="_source" value="commercialmachineryguide-exit">
+      <input type="hidden" name="_source" value="equipmentfinancehub-exit">
       <input type="text" name="firstName" placeholder="Your Name *" required style="padding:12px 16px;border:1.5px solid #dde1e8;border-radius:8px;font-size:0.95rem;font-family:inherit;">
       <input type="tel" name="phone" placeholder="Phone Number *" required style="padding:12px 16px;border:1.5px solid #dde1e8;border-radius:8px;font-size:0.95rem;font-family:inherit;">
       <input type="text" name="equipment" placeholder="What equipment do you need?" style="padding:12px 16px;border:1.5px solid #dde1e8;border-radius:8px;font-size:0.95rem;font-family:inherit;">

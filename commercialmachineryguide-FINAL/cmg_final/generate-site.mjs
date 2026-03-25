@@ -28,14 +28,14 @@ const SPEAKABLE_PILLARS = new Set([
   'laundry-equipment-financing.html',
   'all-commercial-equipment.html',
 ]);
-const BASE = 'https://commercialmachineryguide.com';
+const BASE = 'https://equipmentfinancehub.com';
 
 const FOOTER = `<footer class="site-footer">
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:14px;">
         <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:var(--orange);border-radius:8px;font-size:1.2rem;">⚙️</span>
-        <span style="color:white;font-size:1rem;font-weight:700;">Commercial Machinery Guide</span>
+        <span style="color:white;font-size:1rem;font-weight:700;">Equipment Finance Hub</span>
       </a>
       <p>The most comprehensive commercial machinery and equipment financing resource. Covering every category from CNC machines to combine harvesters, wood chippers to MRI machines.</p>
       <a href="tel:+19199072611" class="footer-phone">📞 (919) 907-2611</a>
@@ -94,7 +94,7 @@ const FOOTER = `<footer class="site-footer">
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2026 Commercial Machinery Guide. Informational resource only. Not an offer of credit or guarantee of approval. Terms vary by lender and equipment type.</p>
+    <p>© 2026 Equipment Finance Hub. Informational resource only. Not an offer of credit or guarantee of approval. Terms vary by lender and equipment type.</p>
     <div class="footer-bottom-links">
       <a href="/how-commercial-equipment-financing-works.html">How It Works</a>
       <a href="/all-commercial-equipment.html">All Equipment</a>
@@ -180,8 +180,8 @@ function renderPage(p) {
     url,
     datePublished: '2026-03-01',
     dateModified: '2026-03-22',
-    author: { '@type': 'Organization', name: 'Commercial Machinery Guide' },
-    publisher: { '@type': 'Organization', name: 'Commercial Machinery Guide' },
+    author: { '@type': 'Organization', name: 'Equipment Finance Hub' },
+    publisher: { '@type': 'Organization', name: 'Equipment Finance Hub' },
   };
 
   let extraLd = '';

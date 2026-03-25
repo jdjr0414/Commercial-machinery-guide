@@ -1,5 +1,5 @@
-# Commercial Machinery Guide — Complete Build Instructions
-# commercialmachineryguide.com
+# Equipment Finance Hub — Complete Build Instructions
+# equipmentfinancehub.com
 # SEO + AEO + GEO Optimized
 
 ## ═══════════════════════════════════════
@@ -80,11 +80,11 @@ Every page must follow this structure exactly:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>[PAGE TITLE — max 60 chars]</title>
   <meta name="description" content="[150-160 char description answering the primary query]">
-  <link rel="canonical" href="https://commercialmachineryguide.com/[slug].html">
+  <link rel="canonical" href="https://equipmentfinancehub.com/[slug].html">
   <meta property="og:title" content="[title]">
   <meta property="og:description" content="[description]">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://commercialmachineryguide.com/[slug].html">
+  <meta property="og:url" content="https://equipmentfinancehub.com/[slug].html">
   <meta name="robots" content="index, follow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1284,8 +1284,8 @@ Then organized directory with headers and links for EVERY equipment type:
 
 After building all 90 pages:
 
-1. Generate sitemap.xml with all page URLs (base: https://commercialmachineryguide.com)
-2. Generate robots.txt: User-agent: * / Allow: / / Sitemap: https://commercialmachineryguide.com/sitemap.xml
+1. Generate sitemap.xml with all page URLs (base: https://equipmentfinancehub.com)
+2. Generate robots.txt: User-agent: * / Allow: / / Sitemap: https://equipmentfinancehub.com/sitemap.xml
 3. Verify every page has:
    - Quick Answer box (AEO)
    - Key Facts box (GEO)
