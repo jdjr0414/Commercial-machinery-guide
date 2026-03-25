@@ -1,0 +1,7 @@
+# Workers + static assets — matches Cloudflare project "commercial-machinery-guide"
+# https://developers.cloudflare.com/workers/static-assets/binding/
+name = "commercial-machinery-guide"
+compatibility_date = "2024-01-01"
+
+[assets]
+directory = "./cmg_final"

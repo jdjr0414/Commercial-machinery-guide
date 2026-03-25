@@ -1,0 +1,4 @@
+# Exclude Pages-style redirect file from Workers static assets bundle.
+# Prevents wrangler from validating _redirects (absolute URLs / domain rules fail deploy).
+# Use Cloudflare Dashboard → Redirect Rules for www → apex instead.
+_redirects
