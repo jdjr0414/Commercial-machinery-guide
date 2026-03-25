@@ -1,5 +1,0 @@
-# Cloudflare Pages — path-only redirects here (relative source/destination).
-# Domain-level rules (e.g. www → apex) are NOT supported in _redirects.
-# Add those in: Cloudflare Dashboard → your domain → Rules → Redirect Rules
-#   e.g. (http.host eq "www.equipmentfinancehub.com") → redirect to https://equipmentfinancehub.com${uri.path}${uri.query}
-# Docs: https://developers.cloudflare.com/pages/configuration/redirects/
