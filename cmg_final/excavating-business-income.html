@@ -35,7 +35,7 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="/" class="site-logo"><span class="logo-icon">⚙️</span><span>Equipment Finance Hub<span class="logo-sub">Equipment Financing Resource</span></span></a>
-    <nav class="site-nav">
+    <nav class="site-nav" id="site-nav" aria-label="Main">
       <a href="/manufacturing-equipment-financing.html">Manufacturing</a>
       <a href="/construction-equipment-financing.html">Construction</a>
       <a href="/agricultural-equipment-financing.html">Agriculture</a>
@@ -45,7 +45,7 @@
       <a href="tel:+19199072611" class="nav-phone">📞 (919) 907-2611</a>
       <a href="https://axiantpartners.com/match" rel="sponsored noopener noreferrer" target="_blank" class="nav-cta">Get Financing →</a>
     </nav>
-    <button class="menu-btn" aria-label="Menu">☰</button>
+    <button type="button" class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span class="menu-btn-bars" aria-hidden="true"><span></span><span></span><span></span></span></button>
   </div>
 </header>
 
@@ -416,5 +416,6 @@ document.getElementById('exitForm').addEventListener('submit',async function(e){
   }catch(err){btn.textContent='Get My Free Quote';btn.disabled=false;}
 });
 </script>
+  <script src="nav.js" defer></script>
 </body>
 </html>

@@ -35,7 +35,7 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="/" class="site-logo"><span class="logo-icon">⚙️</span><span>Equipment Finance Hub<span class="logo-sub">Equipment Financing Resource</span></span></a>
-    <nav class="site-nav">
+    <nav class="site-nav" id="site-nav" aria-label="Main">
       <a href="/manufacturing-equipment-financing.html">Manufacturing</a>
       <a href="/construction-equipment-financing.html">Construction</a>
       <a href="/agricultural-equipment-financing.html">Agriculture</a>
@@ -45,7 +45,7 @@
       <a href="tel:+19199072611" class="nav-phone">📞 (919) 907-2611</a>
       <a href="https://axiantpartners.com/match" rel="sponsored noopener noreferrer" target="_blank" class="nav-cta">Get Financing →</a>
     </nav>
-    <button class="menu-btn" aria-label="Menu">☰</button>
+    <button type="button" class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span class="menu-btn-bars" aria-hidden="true"><span></span><span></span><span></span></span></button>
   </div>
 </header>
 
@@ -422,5 +422,6 @@
   </div>
 </div>
 <script>let exitShown=false;document.addEventListener('mouseleave',function(e){if(e.clientY<50&&!exitShown){exitShown=true;document.getElementById('exitPopup').style.display='flex';}});document.getElementById('exitForm').addEventListener('submit',async function(e){e.preventDefault();const btn=document.getElementById('exitBtn');btn.textContent='Sending...';btn.disabled=true;const data=Object.fromEntries(new FormData(this).entries());try{const r=await fetch('https://formspree.io/f/xbdzbqjw',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)});if(r.ok){document.getElementById('exitSuccess').style.display='block';this.reset();btn.textContent='Submitted';setTimeout(()=>{document.getElementById('exitPopup').style.display='none';},3000);}else throw new Error();}catch(err){btn.textContent='Get My Free Quote';btn.disabled=false;}});</script>
+  <script src="nav.js" defer></script>
 </body>
 </html>
