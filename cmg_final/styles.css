@@ -502,6 +502,15 @@ body.mobile-nav-open {
 .section-dark .section-heading h2 { color: var(--white); }
 .section-dark .section-heading p { color: rgba(255,255,255,0.72); }
 
+/* Key facts (guide pages): keep label and value visually distinct */
+.key-fact-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.5em;
+  row-gap: 0.15em;
+}
+
 /* ============================================================
    CARDS & GRIDS
    ============================================================ */
