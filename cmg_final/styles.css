@@ -1332,3 +1332,136 @@ body.mobile-nav-open {
     transition: none;
   }
 }
+
+/* ============================================================
+   INTERIOR GUIDE PAGES
+   Layout/callout classes used by ~90 guide pages (content-wrap,
+   quick-answer, key-facts, hero-sub, hero-ctas, footer-inner)
+   that were previously undefined. Typography uses the child
+   combinator (>) so nested dark components like .cta-band keep
+   their own light-on-dark colors.
+   ============================================================ */
+
+/* Interior heroes stack (breadcrumb / h1 / sub / ctas) in one
+   column. Homepage-style heroes keep two columns via the extra
+   .container class on .hero-inner. */
+.hero-inner { grid-template-columns: 1fr; gap: 16px; }
+.hero-inner.container { grid-template-columns: 1fr 1fr; gap: 60px; }
+
+.hero-sub {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.7;
+  max-width: 760px;
+  margin: 4px 0 0;
+}
+.hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 8px; }
+
+/* Article body container */
+.content-wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+}
+.content-wrap > h2 {
+  font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+  font-weight: 800;
+  color: var(--navy);
+  margin: 36px 0 14px;
+  letter-spacing: -0.2px;
+}
+.content-wrap > h2:first-child { margin-top: 0; }
+.content-wrap > h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 26px 0 10px;
+}
+.content-wrap > p { margin: 0 0 16px; }
+.content-wrap > ul,
+.content-wrap > ol { margin: 0 0 18px; padding-left: 22px; }
+.content-wrap > ul > li,
+.content-wrap > ol > li { margin-bottom: 8px; line-height: 1.7; }
+
+/* Quick Answer callout */
+.quick-answer {
+  background: var(--off-white);
+  border-left: 4px solid var(--orange);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin: 0 0 28px;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text);
+}
+.quick-answer strong { color: var(--navy); }
+
+/* Key Facts callout */
+.key-facts {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  margin: 0 0 28px;
+  box-shadow: var(--shadow);
+}
+.key-facts h2 { font-size: 1.15rem; color: var(--navy); margin: 0 0 14px; }
+.key-facts ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.key-facts li { position: relative; padding-left: 26px; line-height: 1.6; color: var(--text-light); margin: 0; }
+.key-facts li::before { content: '\2713'; position: absolute; left: 0; top: 0; color: var(--orange); font-weight: 800; }
+.key-facts li strong { color: var(--navy); }
+
+/* FAQ items that use <h3>/<p> instead of .faq-question/.faq-answer */
+.faq-item h3 {
+  padding: 18px 24px 0;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+.faq-item h3 + p,
+.faq-item > p {
+  padding: 8px 24px 18px;
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* Interior footers use .footer-inner with <strong> + block <a> links.
+   Scoped to .footer-inner so the homepage .footer-grid is untouched. */
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+}
+.footer-inner .footer-col strong {
+  display: block;
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.footer-inner .footer-col p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.72);
+}
+.footer-inner .footer-col > a {
+  display: block;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.85rem;
+  margin-bottom: 9px;
+  text-decoration: none;
+}
+.footer-inner .footer-col > a:hover { color: var(--white); }
+
+@media (max-width: 768px) {
+  .hero-inner.container { grid-template-columns: 1fr; gap: 36px; }
+  .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+  .content-wrap { padding: 32px 20px 56px; }
+}
