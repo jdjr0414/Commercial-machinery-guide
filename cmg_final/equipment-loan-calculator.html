@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/site-logo.png">
+  <title>Equipment Loan Calculator | Payment &amp; Section 179</title>
+  <meta name="description" content="Free equipment loan calculator. Estimate your monthly payment, total interest, and first-year Section 179 tax savings instantly. No signup.">
+  <link rel="canonical" href="https://equipmentfinancehub.com/equipment-loan-calculator.html">
+  <meta property="og:title" content="Equipment Loan Calculator | Payment &amp; Section 179">
+  <meta property="og:description" content="Free equipment loan calculator. Estimate your monthly payment, total interest, and first-year Section 179 tax savings instantly. No signup.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://equipmentfinancehub.com/equipment-loan-calculator.html">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://equipmentfinancehub.com/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Equipment Finance Hub — equipment loan payment calculator">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://equipmentfinancehub.com/og-default.png">
+  <meta name="theme-color" content="#0a1628">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="preload" href="/styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @media (max-width: 720px){ .calc-grid{ grid-template-columns:1fr !important; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Equipment Loan Calculator",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All",
+    "url": "https://equipmentfinancehub.com/equipment-loan-calculator.html",
+    "description": "Free equipment loan calculator to estimate monthly equipment financing payments, total interest, and first-year Section 179 tax savings.",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+    "publisher": {"@type": "Organization", "name": "Equipment Finance Hub", "url": "https://equipmentfinancehub.com"},
+    "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".quick-answer", "h1", ".key-facts"]}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://equipmentfinancehub.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Equipment Loan Calculator", "item": "https://equipmentfinancehub.com/equipment-loan-calculator.html"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is an equipment loan payment calculated?",
+        "acceptedAnswer": {"@type": "Answer", "text": "An equipment loan payment is calculated with the standard amortization formula: M = P × [ r(1+r)^n ] / [ (1+r)^n − 1 ], where P is the amount financed (equipment price minus down payment), r is the monthly interest rate (annual APR divided by 12), and n is the number of monthly payments (the term). The calculator on this page applies that formula instantly as you change the price, down payment, term, and rate."}
+      },
+      {
+        "@type": "Question",
+        "name": "What interest rate should I expect on equipment financing?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Equipment financing rates typically range from about 5% to 18% APR depending on credit profile, time in business, equipment type, age of the equipment, and loan term. Strong-credit, established businesses financing new equipment see the lowest rates; startups, used equipment, and lower credit scores push rates higher. Use a mid-range estimate if you are unsure, then get a real quote to replace the estimate."}
+      },
+      {
+        "@type": "Question",
+        "name": "Can I finance equipment with no money down?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes. Many equipment loans and leases are available with $0 down for qualified borrowers, which is why this calculator defaults the down payment to $0. A down payment lowers the amount financed and therefore the monthly payment and total interest, but it is not always required. Set the down payment field to whatever you plan to put down to see the effect."}
+      },
+      {
+        "@type": "Question",
+        "name": "How does Section 179 affect the cost of equipment financing?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Section 179 of the IRS tax code lets many businesses deduct the full purchase price of qualifying equipment placed in service during the tax year, up to an annual limit. Because the deduction can be taken in year one while the equipment is paid for over several years of loan payments, the first-year tax savings can offset a large share of that year's payments. This calculator gives a simplified first-year savings estimate (equipment price × your tax rate); your actual benefit depends on the annual Section 179 limit, your taxable income, and whether the equipment qualifies — confirm with a tax professional."}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo">
+        <span class="logo-icon">⚙️</span>
+        <span>Equipment Finance Hub<span class="logo-sub">Equipment Financing Resource</span></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="/manufacturing-equipment-financing.html">Manufacturing</a>
+        <a href="/construction-equipment-financing.html">Construction</a>
+        <a href="/agricultural-equipment-financing.html">Agriculture</a>
+        <a href="/forestry-tree-equipment-financing.html">Forestry</a>
+        <a href="/all-commercial-equipment.html">All Equipment</a>
+        <a href="/how-commercial-equipment-financing-works.html">How It Works</a>
+        <a href="tel:+19199072611" class="nav-phone">📞 (919) 907-2611</a>
+        <a href="https://axiantpartners.com/match" rel="sponsored noopener noreferrer" target="_blank" class="nav-cta">Get Financing →</a>
+      </nav>
+      <button type="button" class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span class="menu-btn-bars" aria-hidden="true"><span></span><span></span><span></span></span></button>
+    </div>
+  </header>
+
+  <main>
+
+<section class="hero">
+  <div class="hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> › Equipment Loan Calculator
+    </nav>
+    <h1>Equipment Loan Calculator</h1>
+    <p class="hero-sub">Estimate your monthly equipment financing payment, total interest, and first-year Section 179 tax savings. Adjust the numbers and the results update instantly — free, no signup.</p>
+  </div>
+</section>
+
+<div class="content-wrap">
+
+  <!-- ===== CALCULATOR ===== -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;margin:8px 0 32px;" class="calc-grid">
+    <div style="background:var(--white,#fff);border:1px solid var(--border,#dde1e8);border-radius:14px;padding:28px;">
+      <h2 style="margin:0 0 18px;font-size:1.25rem;">Your Equipment &amp; Loan</h2>
+      <form id="calcForm" autocomplete="off">
+        <label style="display:block;font-weight:600;font-size:0.9rem;color:#0a1628;margin-bottom:6px;">Equipment price</label>
+        <div style="position:relative;margin-bottom:18px;">
+          <span style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#9aa3b0;font-weight:600;">$</span>
+          <input type="number" id="price" value="120000" min="0" step="1000" inputmode="numeric" style="width:100%;padding:12px 14px 12px 28px;border:1.5px solid #dde1e8;border-radius:8px;font-size:1rem;font-family:inherit;box-sizing:border-box;">
+        </div>
+
+        <label style="display:block;font-weight:600;font-size:0.9rem;color:#0a1628;margin-bottom:6px;">Down payment <span id="downPctLabel" style="color:#9aa3b0;font-weight:500;"></span></label>
+        <div style="position:relative;margin-bottom:18px;">
+          <span style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#9aa3b0;font-weight:600;">$</span>
+          <input type="number" id="down" value="0" min="0" step="1000" inputmode="numeric" style="width:100%;padding:12px 14px 12px 28px;border:1.5px solid #dde1e8;border-radius:8px;font-size:1rem;font-family:inherit;box-sizing:border-box;">
+        </div>
+
+        <label style="display:block;font-weight:600;font-size:0.9rem;color:#0a1628;margin-bottom:6px;">Loan term</label>
+        <select id="term" style="width:100%;padding:12px 14px;border:1.5px solid #dde1e8;border-radius:8px;font-size:1rem;font-family:inherit;margin-bottom:18px;box-sizing:border-box;background:#fff;">
+          <option value="24">24 months (2 years)</option>
+          <option value="36">36 months (3 years)</option>
+          <option value="48">48 months (4 years)</option>
+          <option value="60" selected>60 months (5 years)</option>
+          <option value="72">72 months (6 years)</option>
+          <option value="84">84 months (7 years)</option>
+        </select>
+
+        <label style="display:block;font-weight:600;font-size:0.9rem;color:#0a1628;margin-bottom:6px;">Interest rate (APR)</label>
+        <div style="position:relative;margin-bottom:8px;">
+          <span style="position:absolute;right:14px;top:50%;transform:translateY(-50%);color:#9aa3b0;font-weight:600;">%</span>
+          <input type="number" id="apr" value="7.9" min="0" max="40" step="0.1" inputmode="decimal" style="width:100%;padding:12px 28px 12px 14px;border:1.5px solid #dde1e8;border-radius:8px;font-size:1rem;font-family:inherit;box-sizing:border-box;">
+        </div>
+        <p style="font-size:0.8rem;color:#9aa3b0;margin:0 0 18px;">Typical equipment financing runs ~5%–18% APR. Not sure? Leave the default and get a real quote.</p>
+
+        <label style="display:block;font-weight:600;font-size:0.9rem;color:#0a1628;margin-bottom:6px;">Business tax rate <span style="color:#9aa3b0;font-weight:500;">— optional, for Section 179 estimate</span></label>
+        <div style="position:relative;">
+          <span style="position:absolute;right:14px;top:50%;transform:translateY(-50%);color:#9aa3b0;font-weight:600;">%</span>
+          <input type="number" id="tax" value="" min="0" max="50" step="1" placeholder="e.g. 24" inputmode="numeric" style="width:100%;padding:12px 28px 12px 14px;border:1.5px solid #dde1e8;border-radius:8px;font-size:1rem;font-family:inherit;box-sizing:border-box;">
+        </div>
+      </form>
+    </div>
+
+    <div style="background:linear-gradient(135deg,#0a1628 0%,#1e3058 100%);border-radius:14px;padding:28px;color:#fff;">
+      <p style="font-size:0.78rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#e8610a;margin:0 0 6px;">Estimated Monthly Payment</p>
+      <p id="outMonthly" style="font-size:2.6rem;font-weight:800;margin:0 0 4px;line-height:1.1;">$0</p>
+      <p style="color:rgba(255,255,255,0.6);font-size:0.85rem;margin:0 0 22px;">per month for <span id="outTerm">60</span> months</p>
+
+      <div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid rgba(255,255,255,0.14);padding-top:18px;">
+        <div style="display:flex;justify-content:space-between;font-size:0.92rem;"><span style="color:rgba(255,255,255,0.75);">Amount financed</span><strong id="outFinanced">$0</strong></div>
+        <div style="display:flex;justify-content:space-between;font-size:0.92rem;"><span style="color:rgba(255,255,255,0.75);">Total of payments</span><strong id="outTotal">$0</strong></div>
+        <div style="display:flex;justify-content:space-between;font-size:0.92rem;"><span style="color:rgba(255,255,255,0.75);">Total interest</span><strong id="outInterest">$0</strong></div>
+        <div id="outTaxRow" style="display:none;justify-content:space-between;font-size:0.92rem;"><span style="color:#ffd9b8;">Est. first-year Section 179 savings</span><strong id="outTax" style="color:#ffd9b8;">$0</strong></div>
+      </div>
+
+      <div id="outTaxNote" style="display:none;background:rgba(255,255,255,0.07);border-radius:8px;padding:12px;margin-top:16px;font-size:0.78rem;color:rgba(255,255,255,0.7);line-height:1.5;">
+        Simplified estimate: equipment price × your tax rate, assuming the equipment fully qualifies for Section 179 and is placed in service this tax year. Subject to the annual Section 179 limit and your taxable income. Confirm with a tax professional.
+      </div>
+
+      <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="https://axiantpartners.com/match" rel="sponsored noopener noreferrer" target="_blank" class="btn btn-primary">Get a Real Quote →</a>
+        <a href="tel:+19199072611" style="display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,0.85);font-weight:600;font-size:0.95rem;text-decoration:none;padding:12px 4px;">📞 (919) 907-2611</a>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-size:0.82rem;color:#9aa3b0;margin:-12px 0 28px;">Estimates only, for planning purposes. Actual payments depend on lender, credit approval, fees, and final terms. Equipment Finance Hub is not a lender.</p>
+
+  <!-- ===== SUPPORTING CONTENT ===== -->
+  <div class="quick-answer">
+    <strong>Quick Answer:</strong> Your equipment loan payment is driven by four numbers — the equipment price, your down payment, the loan term (length in months), and the interest rate (APR). A longer term lowers the monthly payment but increases total interest; a larger down payment or lower rate reduces both. For many businesses, Section 179 lets you deduct the equipment cost in year one, so part of your first-year payments can be offset by tax savings.
+  </div>
+
+  <h2>How the Equipment Loan Calculator Works</h2>
+  <p>The calculator uses the standard loan amortization formula. It takes the amount financed (equipment price minus your down payment), applies your monthly interest rate (annual APR ÷ 12), and spreads repayment evenly across the number of months in your term. The result is a fixed monthly payment, the total you'll pay over the life of the loan, and how much of that total is interest.</p>
+  <p>Move any input and watch the trade-offs in real time. Stretching a 60-month loan to 84 months drops the monthly payment but raises total interest. Adding a down payment cuts both the monthly payment and total interest. Dropping the APR — which is what a competitive quote does — saves you money on every single payment.</p>
+
+  <h2>The Four Levers That Change Your Payment</h2>
+  <ul>
+    <li><strong>Equipment price:</strong> The total cost of the machine, vehicle, or system you're financing. Include freight and installation if the lender will finance them.</li>
+    <li><strong>Down payment:</strong> Many equipment loans allow $0 down for qualified borrowers, so the calculator starts there. Any amount you put down reduces the financed balance.</li>
+    <li><strong>Term:</strong> Equipment loans commonly run 24–84 months. Match the term to the useful life of the equipment — financing a 5-year asset over 7 years means paying for it after its best years.</li>
+    <li><strong>APR:</strong> The single biggest variable you can influence by shopping the deal. Rates depend on credit, time in business, and equipment type. Getting matched with the right lender is where real savings come from.</li>
+  </ul>
+
+  <h2>Section 179 — Why the After-Tax Cost Is Lower Than the Sticker</h2>
+  <p>Section 179 of the IRS tax code allows many businesses to deduct the full purchase price of qualifying equipment in the year it's placed in service, rather than depreciating it over many years. Because you can take that deduction in year one while paying for the equipment over several years of loan payments, the first-year tax savings can cover a meaningful share of that year's payments. Enter your business tax rate in the calculator to see a simplified estimate of those first-year savings. The actual benefit depends on the annual Section 179 limit, your taxable income, and whether your equipment qualifies — always confirm with a tax professional before relying on it.</p>
+
+  <div class="cta-band">
+    <h2>Turn Your Estimate Into a Real Quote</h2>
+    <p>The calculator gives you the math — a lender gives you the rate. Get matched with equipment finance companies that work with your credit profile and equipment type. $0 down available for qualified borrowers, decision in 24–48 hours.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:16px;">
+      <a href="https://axiantpartners.com/match" rel="sponsored noopener noreferrer" target="_blank" class="btn btn-primary">Get Financing Options →</a>
+      <a href="tel:+19199072611" class="btn btn-secondary">📞 (919) 907-2611</a>
+    </div>
+  </div>
+
+  <h2>Related Equipment Financing Guides</h2>
+  <ul>
+    <li><a href="/how-commercial-equipment-financing-works.html">How Commercial Equipment Financing Works</a></li>
+    <li><a href="/equipment-financing-vs-lease.html">Equipment Financing vs. Lease</a></li>
+    <li><a href="/no-money-down-equipment-financing.html">No Money Down Equipment Financing</a></li>
+    <li><a href="/equipment-financing-tax-benefits.html">Equipment Financing Tax Benefits &amp; Section 179</a></li>
+    <li><a href="/all-commercial-equipment.html">Browse All Equipment Types</a></li>
+  </ul>
+
+  <h2>Frequently Asked Questions — Equipment Loan Calculator</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3>How is an equipment loan payment calculated?</h3>
+      <p>An equipment loan payment uses the standard amortization formula: M = P × [ r(1+r)<sup>n</sup> ] / [ (1+r)<sup>n</sup> − 1 ], where P is the amount financed (price minus down payment), r is the monthly interest rate (APR ÷ 12), and n is the number of monthly payments. The calculator above applies that formula instantly as you change the inputs.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What interest rate should I expect on equipment financing?</h3>
+      <p>Equipment financing rates typically range from about 5% to 18% APR depending on credit profile, time in business, equipment type and age, and loan term. Strong-credit, established businesses financing new equipment get the lowest rates; startups, used equipment, and weaker credit push rates higher. Use a mid-range estimate if unsure, then replace it with a real quote.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I finance equipment with no money down?</h3>
+      <p>Yes. Many equipment loans and leases offer $0 down for qualified borrowers, which is why the calculator defaults the down payment to $0. A down payment lowers the amount financed and reduces both your monthly payment and total interest, but it isn't always required.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How does Section 179 affect the cost of equipment financing?</h3>
+      <p>Section 179 lets many businesses deduct the full price of qualifying equipment placed in service during the tax year, up to an annual limit. Because the deduction comes in year one while you pay over several years, the first-year tax savings can offset a large share of that year's payments. The calculator's estimate (price × your tax rate) is simplified — your actual benefit depends on the annual limit, your taxable income, and equipment eligibility, so confirm with a tax professional.</p>
+    </div>
+  </div>
+
+</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <strong>Equipment Finance Hub</strong>
+        <p>Equipment financing information for construction, manufacturing, agriculture, and specialty industries.</p>
+        <p><a href="https://www.commercialvehicleguide.com" rel="noopener noreferrer" target="_blank">Commercial Vehicle Guide</a></p>
+      </div>
+      <div class="footer-col">
+        <strong>Tools &amp; Guides</strong>
+        <a href="/equipment-loan-calculator.html">Equipment Loan Calculator</a>
+        <a href="/how-commercial-equipment-financing-works.html">How Financing Works</a>
+        <a href="/equipment-financing-vs-lease.html">Financing vs. Lease</a>
+        <a href="/all-commercial-equipment.html">All Equipment Types</a>
+      </div>
+      <div class="footer-col">
+        <strong>Get Financing</strong>
+        <a href="https://axiantpartners.com/match" rel="sponsored noopener noreferrer" target="_blank">Apply Online →</a>
+        <a href="tel:+19199072611">📞 (919) 907-2611</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Equipment Finance Hub. Financing information only — not a lender. <a href="https://axiantpartners.com/match" rel="sponsored noopener noreferrer" target="_blank">Get matched with lenders →</a></p>
+    </div>
+  </footer>
+
+  <script>
+  (function(){
+    var $ = function(id){ return document.getElementById(id); };
+    var fmt = function(n){
+      if(!isFinite(n)) n = 0;
+      return '$' + Math.round(n).toLocaleString('en-US');
+    };
+    function recalc(){
+      var price = Math.max(0, parseFloat($('price').value) || 0);
+      var down  = Math.max(0, parseFloat($('down').value) || 0);
+      if(down > price) down = price;
+      var term  = parseInt($('term').value, 10) || 60;
+      var apr   = Math.max(0, parseFloat($('apr').value) || 0);
+      var taxRaw = $('tax').value;
+      var financed = price - down;
+
+      var r = (apr / 100) / 12;
+      var monthly;
+      if(r === 0){
+        monthly = term > 0 ? financed / term : 0;
+      } else {
+        var f = Math.pow(1 + r, term);
+        monthly = financed * (r * f) / (f - 1);
+      }
+      var total = monthly * term;
+      var interest = total - financed;
+
+      $('outMonthly').textContent  = fmt(monthly);
+      $('outTerm').textContent     = term;
+      $('outFinanced').textContent = fmt(financed);
+      $('outTotal').textContent    = fmt(total);
+      $('outInterest').textContent = fmt(interest);
+
+      // down payment percent hint
+      var pct = price > 0 ? Math.round((down / price) * 100) : 0;
+      $('downPctLabel').textContent = down > 0 ? '(' + pct + '% of price)' : '';
+
+      // Section 179 estimate (optional)
+      var taxRate = parseFloat(taxRaw);
+      if(taxRaw !== '' && isFinite(taxRate) && taxRate > 0){
+        var savings = price * (taxRate / 100);
+        $('outTax').textContent = fmt(savings);
+        $('outTaxRow').style.display = 'flex';
+        $('outTaxNote').style.display = 'block';
+      } else {
+        $('outTaxRow').style.display = 'none';
+        $('outTaxNote').style.display = 'none';
+      }
+    }
+    ['price','down','term','apr','tax'].forEach(function(id){
+      var el = $(id);
+      el.addEventListener('input', recalc);
+      el.addEventListener('change', recalc);
+    });
+    recalc();
+  })();
+  </script>
+  <script src="nav.js" defer></script>
+</body>
+</html>
