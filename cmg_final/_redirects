@@ -1,0 +1,7 @@
+# Cloudflare redirects — https://developers.cloudflare.com/pages/configuration/redirects/
+# Canonicalize the host to the apex https domain. Every <link rel="canonical"> on the
+# site already points at https://equipmentfinancehub.com (no www); these 301s make the
+# server agree, consolidating the www/http variants Search Console flagged as duplicates
+# ("Page with redirect" / "Alternate page with proper canonical tag").
+https://www.equipmentfinancehub.com/*  https://equipmentfinancehub.com/:splat  301
+http://www.equipmentfinancehub.com/*   https://equipmentfinancehub.com/:splat  301
