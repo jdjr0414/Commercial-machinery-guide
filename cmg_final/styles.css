@@ -1465,3 +1465,22 @@ body.mobile-nav-open {
   .footer-inner { grid-template-columns: 1fr; gap: 28px; }
   .content-wrap { padding: 32px 20px 56px; }
 }
+
+/* ============================================================
+   MOBILE HARDENING
+   ============================================================ */
+/* Wide tables scroll horizontally inside their own box instead of
+   stretching the whole page wider than the viewport. */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  /* Collapse any inline 2-column grid (mid-page promo form, calculator)
+     to a single column so form fields aren't squeezed on phones. */
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  /* Belt-and-suspenders: never allow horizontal page scroll. */
+  html, body { overflow-x: hidden; }
+}
