@@ -1357,6 +1357,7 @@ body.mobile-nav-open {
   margin: 4px 0 0;
 }
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 8px; }
+.byline { font-size: 0.82rem; color: rgba(255,255,255,0.62); font-weight: 500; margin: 10px 0 0; }
 
 /* Article body container */
 .content-wrap {
