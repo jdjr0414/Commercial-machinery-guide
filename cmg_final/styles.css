@@ -38,7 +38,7 @@ body {
 
 img { max-width: 100%; height: auto; display: block; }
 
-a { color: var(--orange); text-decoration: none; }
+a { color: #c2410c; text-decoration: none; } /* AA-contrast orange on white (5.18:1) */
 a:hover { text-decoration: underline; }
 
 /* ---- CONTAINER ---- */
@@ -462,8 +462,8 @@ body.mobile-nav-open {
 
 .btn-outline {
   background: transparent;
-  color: var(--orange);
-  border-color: var(--orange);
+  color: #c2410c;
+  border-color: #c2410c;
 }
 
 .btn-outline:hover {
@@ -491,7 +491,7 @@ body.mobile-nav-open {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--orange);
+  color: #c2410c;
   margin-bottom: 12px;
 }
 
@@ -574,7 +574,7 @@ body.mobile-nav-open {
   margin-top: 14px;
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--orange);
+  color: #c2410c;
 }
 
 /* Category cards (large with bg color header) */
@@ -783,7 +783,7 @@ body.mobile-nav-open {
 
 .prose strong { font-weight: 700; color: var(--navy); }
 
-.prose a { color: var(--orange); font-weight: 500; }
+.prose a { color: #c2410c; font-weight: 500; }
 .prose a:hover { text-decoration: underline; }
 
 .prose .highlight-box {
@@ -885,7 +885,7 @@ body.mobile-nav-open {
 }
 
 .income-level.entry { background: #e8f5e9; color: #2e7d32; }
-.income-level.mid { background: #fff3e0; color: #e65100; }
+.income-level.mid { background: #fff3e0; color: #c2410c; }
 .income-level.senior { background: #e3f2fd; color: #1565c0; }
 
 .income-amount {
@@ -1084,7 +1084,8 @@ body.mobile-nav-open {
   flex-wrap: wrap;
 }
 
-.breadcrumb a { color: var(--orange); font-weight: 500; }
+.breadcrumb a { color: #c2410c; font-weight: 500; }
+.hero .breadcrumb a, .footer-col p a, .footer-bottom p a { color: var(--orange-light); } /* bright orange on dark backgrounds */
 .breadcrumb span { color: var(--gray-mid); }
 .breadcrumb .current { color: var(--text-light); font-weight: 500; }
 
@@ -1166,7 +1167,7 @@ body.mobile-nav-open {
   flex-wrap: wrap;
 }
 
-.footer-bottom p { font-size: 0.8rem; color: rgba(255,255,255,0.45); }
+.footer-bottom p { font-size: 0.8rem; color: rgba(255,255,255,0.6); }
 
 .footer-bottom-links {
   display: flex;
@@ -1174,7 +1175,7 @@ body.mobile-nav-open {
 }
 
 .footer-bottom-links a {
-  color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.6);
   font-size: 0.8rem;
   text-decoration: none;
 }
